@@ -1,0 +1,50 @@
+Entornos Virtuales en Windows	
+
+********************VIRTUALENV
+
+1.- Nos colocamos en la ruta donde vamos a crear la carpeta con el entorno
+
+----Creación del entorno
+   >virtualenv <nombre_entorno>
+----Activación del entorno
+   > cd nombre_entorno\Scripts\
+   > activate
+----Revisamos los paquetes instalados
+   > pip freeze  
+----Instalamos/desinstalamos un paquete
+   > pip un/install <nombre_paquete>
+----Desactivamos el entorno
+   > deactivate
+--- Exportar paquetes
+   > cd > ruta del entorno
+   > pip freeze > requirements.txt
+--- Importar paquetes
+   > copiamos el archivo requirements.txt en el nuevo entorno
+   > pip install -r requirements.txt
+
+********************ANACONDA
+
+Ruta de los entornos: C:\Users\Omen\anaconda3\envs\
+
+----Creación del entorno:
+  >conda create --name <nombreentorno>
+ ----Activación del entorno
+   > conda activate <nombreentorno>
+----Revisamos los paquetes instalados
+   > conda list
+----Instalamos/desinstalamos un paquete * Busca
+   > conda install <paquete>
+   > conda remove --name <entorno> <paquete>
+----Desinstalamos un entorno
+   > conda env list
+   > conda deactivate
+   > conda env remove --name <corrupted_env>
+----Desactivamos el entorno
+   > conda deactivate 
+--- Exportar paquetes
+   > conda env export > nombre_entorno.yaml
+--- Importar paquetes
+   > cmd en la ruta donde está el .yaml
+   > conda env create -f nombre_entorno.yaml
+
+

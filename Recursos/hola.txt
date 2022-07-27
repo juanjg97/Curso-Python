@@ -1,0 +1,3 @@
+Hola este es un archivo creado en una ruta diferente
+para abrirlo es necesario específicar el path
+completo a esta ubicación
